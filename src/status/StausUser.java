@@ -14,20 +14,21 @@ public class StausUser
 {
    public void statusDetail(String code)
 {
+    public String [] arr = new Statuses.values();
 switch(code.toUpperCase())
         {
-        case "ZERO": System.out.println(Statuses.values()[0]);
+        case "ZERO": System.out.println(arr[0]);
         break;
-        case "ONE": System.out.println(Statuses.values()[1]);
+        case "ONE": System.out.println(arr[1]);
         break;
         case "TWO":
-        System.out.println(Statuses.values()[2]);
+        System.out.println(arr[2]);
         break;
         case "THREE": 
-            System.out.println(Statuses.values()[3]);
+            System.out.println(arr[3]);
         break;
         default:
-         System.out.println(Statuses.values()[4]);
+         System.out.println(arr[4]);
         break;
         }
 }
